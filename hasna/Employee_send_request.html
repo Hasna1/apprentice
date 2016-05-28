@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style_employee_send_request.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<title> HR management system</title>
 </head>
@@ -17,7 +11,7 @@
 <div class="container wrapper">
 	<div class="row">
 		<div class="col-md-3">
-			<img class="img-responsive" src="./images/logo.jpg" alt="logo" width="100%" />
+			<img class="img-responsive" src="./images/hr_new.jpeg" alt="logo" width="100%" />
 		</div>
 		<div class="col-md-6" >
 			<div class="heading">
@@ -27,8 +21,8 @@
 		<div class="col-md-3" >
 				<div class="welcome">
 					<ul class="list-inline" style="text-align:right">
-		  			<li><strong>Welcome Admin</strong></li>
-		  			<li><strong><a href="#" class="btn btn-primary">Logout</a></strong></li>
+		  			<li><strong>Welcome Prapti</strong></li>
+		  			<li><strong><a href="Login_forn.html" class="btn btn-primary">Logout</a></strong></li>
 					</ul>
 				</div>
 			</div>
@@ -38,17 +32,16 @@
 	 <div  class="row">
 	 
 	 	<div class="col-md-3 page-wrapper">
-			<!-- <div class="col-md-3"> -->
 
 				<ul class="list-unstyled">
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a href="dashboard_employee.html">Dashboard</a>
                     </li><br/>
                     <li>
-                        <a href="#">Leave Applications</a>
+                        <a href="employee_profile.html">Profile</a>
                     </li><br/>
                     <li>
-                        <a href="#"> Employee</a>
+                        <a href="Employee_send_request.html"> Leave Request</a>
                     </li><br/>
                     <li >
                         <a href="#">Settings</a>
@@ -56,35 +49,26 @@
                 </ul>
         </div>
         <div class="col-md-9 list">
-	            <h1 class="page-header">Leave Applications</h1>
+	            <h1 class="page-header">Leave Request</h1>
 	            <div class="row">
                 	<div class="col-md-12 pending">
-	                    <h2>Pending Request</h2>
+	                    <button type="button" class="btn btn-success">Send Leave request</button>
 	                        <div class="table-responsive" style="width: 100%; height: 100% position: absolute;">
 	                            <table class="table table-bordered">
 	                                <thead>
 	                                    <tr style="background:#ddd9e2;">
-	                                        <th>Name</th>
 	                                        <th>Reason</th>
-	                                        <th>Action</th>
+	                                        <th>Date</th>
+	                                        <th>Duration</th>
 	                                    </tr>
 	                                </thead>
 	                                <tbody>
 	                                    <tr class="success">
-	                                    	<td >1.Prapti Thapa</td>
-	                                        <td>Fever</td>
-	                                        <td><button type="button" class="btn btn-success">Approve</button> <button type="button" class="btn btn-danger">Disapprove</button></td>
+	                                    	<td >Wedding</td>
+	                                        <td> 5th April-15th April</td>
+	                                        <td>10 Days</td>
 	                                    </tr>
-	                                    <tr class="success">
-	                                        <td>2.Nelson shrestha</td>
-	                                        <td>Commom cold</td>
-	                                        <td><button type="button" class="btn btn-success">Approve</button> <button type="button" class="btn btn-danger">Disapprove</button></td>
-	                                    </tr>
-	                                    <tr class="success">
-	                                        <td>3.sudin shrestha</td>
-	                                        <td>leg pain</td>
-	                                        <td><button type="button" class="btn btn-success">Approve</button> <button type="button" class="btn btn-danger">Disapprove</button></td>
-	                                    </tr>
+	                                    
 	                                </tbody>
 	                            </table>
 	                        </div>

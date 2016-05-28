@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/style_dashboard.css">
+ 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <title> HR management system</title>
+</head>
+
+<body>
+  <div class="container wrapper">
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-responsive" src="./images/hr_new.jpeg" alt="logo" width="100%" />
+      </div>
+      <div class="col-md-6">
+        <div class="heading">
+          <h1><strong>Human Resource Management</strong></h1>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="welcome">
+          <ul class="list-inline" style="text-align:right">
+            <li><strong>Welcome Admin</strong></li>
+            <li><strong><a href="Login_forn.html" class="btn btn-primary">Logout</a></strong></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 page-wrapper">
+          <ul class="list-unstyled">
+                    <li>
+                        <a href="dashboard_employee.html">Dashboard</a>
+                    </li><br/>
+                    <li>
+                        <a href="employee_profile.html">Profile</a>
+                    </li><br/>
+                    <li>
+                        <a href="Employee_send_request.html"> Leave Request</a>
+                    </li><br/>
+                    <li >
+                        <a href="#">Settings</a>
+                    </li><br/>
+            </ul>
+        </div>
+
+        
+        <div class="col-md-9 list">
+          <h1 class="page-header">Dashboard</h1>
+          <div class="well well-md">
+          <div class="row">
+
+            <div class="col-md-6"> 
+
+              <canvas id="pieChart" height="300" width="300">
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<script>
+                var data = {
+                      labels: [
+                          "Present",
+                          "Absent",
+                          "Work from home"
+                      ],
+                      datasets: [
+                          {
+                              data: [300, 50, 100],
+                              backgroundColor: [
+                                  "#FF6384",
+                                  "#36A2EB",
+                                  "#FFCE56"
+                              ],
+                              hoverBackgroundColor: [
+                                  "#FF6384",
+                                  "#36A2EB",
+                                  "#FFCE56"
+                              ]
+                          }]
+                  };
+
+                  var ctx = document.getElementById("pieChart");
+                  // For a pie chart
+                  var myPieChart = new Chart(ctx,{
+                      type: 'pie',
+                      data: data,
+                      options: {
+                        maintainAspectRatio: false,
+                      }
+                  });
+                    
+              </script>
+</body>
+
+</html>
