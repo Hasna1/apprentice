@@ -1,15 +1,18 @@
 class Factorial
-	def initialize(n)
-		@n=n
-	end
-	def show
-	  result = 1
-  		for i in (1..n).to_a
-    	result *= i
-  		end
-  		result
+	
+	def calc(n)
+    	if n == 0
+        1
+    	else
+        puts "The factorial of 5 is #{n * calc(n-1)}"
+    	end
   	end
+	
+
+obj=Factorial.new()
+obj.calc(5)
 end
 
-a = Factorial.new(4)
-obj.show
+
+
+
